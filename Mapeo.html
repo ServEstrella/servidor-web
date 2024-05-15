@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mapeo</title>
+<link rel="icon" href="Imagenes/Icolombia.ico"/>
+<style type="text/css">
+body {
+	background-image: url(Imagenes/Fondo%20Mapeodos.png);
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Imagenes/button_regreso (1).png')">
+<p align="center"><font face="Comic Sans MS, cursive">En este apartado podras consultar información acerca de diversas ciudades de colombia, solo tienes que presionar el territorio de la provincia que desas consultar, las que podras consultar seran:</font></p>
+<table width="200" border="0" align="center">
+  <tr>
+    <td>Bogotá</td>
+    <td>Caqueta</td>
+    <td>Vichada</td>
+  </tr>
+</table>
+<p align="center"><font face="Comic Sans MS, cursive">En el caso de Bogóta puedes presionar el nombre de Bogotá en la esquina inferior izquierda, pero aun así puede cprecionar en la provincia</font></p>
+<p align="center"><img src="Imagenes/Mapa de Colombia.png" width="424" height="578" usemap="#Map" border="0" />
+  <map name="Map" id="Map">
+    <area shape="poly" coords="162,307,164,301,164,297,165,294,168,293,168,289,169,284,171,278,170,273,174,269,177,272,177,276,176,280,174,284,173,289,173,292,173,296,169,300,166,304,163,307" href="PAGINA PROVINCIA_1.html" target="_self" />
+    <area shape="rect" coords="2,580,60,595" href="PAGINA PROVINCIA_1.html" />
+    <area shape="poly" coords="108,381,104,388,108,395,113,398,117,403,124,404,128,405,134,408,139,408,140,416,144,416,147,425,154,425,158,435,171,437,173,442,177,442,183,446,189,446,193,450,199,450,207,453,212,450,216,454,221,451,226,455,232,452,236,455,239,449,241,444,245,440,253,442,256,436,262,431,268,431,267,427,255,423,246,412,236,406,230,396,222,393,212,402,199,390,190,380,174,375,163,372,160,360,157,357,160,344,156,335,148,336,146,345,135,356,127,367,120,375,115,379" href="PAGINA PROVINCIA_2.html" target="_self" />
+    <area shape="poly" coords="274,336,274,268,279,262,286,256,288,253,297,246,303,246,314,232,323,230,329,226,333,229,340,223,351,226,360,224,366,224,371,223,376,223,386,220,393,223,394,230,390,235,389,247,381,254,379,278,384,285,385,297,381,300,367,298,353,306,341,311,334,309,328,309,315,315,307,320,304,326,301,333,296,338,283,339" href="PAGINA PROVINCIA_3.html" target="_self" />
+    <area shape="rect" coords="6,560,66,573" href="PAGINA PROVINCIA_1.html" target="_self" />
+  </map>
+</p>
+<p align="center"><a href="Index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','Imagenes/button_regreso (1).png',1)"><img src="Imagenes/button_regreso.png" width="286" height="80" id="Image2" /></a></p>
+</body>
+</html>
